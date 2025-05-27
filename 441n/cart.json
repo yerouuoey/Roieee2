@@ -1,0 +1,95 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "ICTICT532 - Apply IP, ethics and privacy in ICT environments",
+            "description": "Learn to apply intellectual property, ethics and privacy principles in ICT environments. Includes data protection, privacy regulations and professional ethics guidelines.",
+            "price": 1299.00,
+            "image": "ethics_privacy.jpg"
+        },
+        {
+            "id": 2,
+            "name": "ICTICT517 - Match ICT needs with the strategic direction of the organisation",
+            "description": "Align ICT requirements with organizational strategic direction. Includes needs analysis, strategic planning and resource optimization.",
+            "price": 1499.00,
+            "image": "strategy_planning.jpg"
+        },
+        {
+            "id": 3,
+            "name": "ICTICT523 - Gather data to identify business requirements",
+            "description": "Collect data to identify business requirements. Includes requirements analysis, data collection methods and business requirements documentation.",
+            "price": 1199.00,
+            "image": "data_analysis.jpg"
+        },
+        {
+            "id": 4,
+            "name": "ICTICT524 - Determine ICT strategies and solutions for organisations",
+            "description": "Determine ICT strategies and solutions for organizations. Includes strategic planning, technology assessment and solution design.",
+            "price": 1599.00,
+            "image": "ict_solutions.jpg"
+        },
+        {
+            "id": 5,
+            "name": "ICTICT526 - Verify client business requirements",
+            "description": "Verify client business requirements. Includes requirements validation, client communication and documentation confirmation.",
+            "price": 999.00,
+            "image": "business_requirements.jpg"
+        },
+        {
+            "id": 6,
+            "name": "ICTICT618 - Manage IP, ethics and privacy in ICT environments",
+            "description": "Advanced management of intellectual property, ethics and privacy in ICT environments. Includes policy development and compliance frameworks.",
+            "price": 1799.00,
+            "image": "ip_management.jpg"
+        },
+        {
+            "id": 7,
+            "name": "ICTICT615 - Implement system software changes",
+            "description": "Implement and manage system software changes. Includes change management, testing procedures and deployment strategies.",
+            "price": 1699.00,
+            "image": "system_changes.jpg"
+        },
+        {
+            "id": 8,
+            "name": "ICTICT616 - Implement and use a database",
+            "description": "Advanced database implementation and management. Includes database design, optimization and security implementation.",
+            "price": 1599.00,
+            "image": "database_advanced.jpg"
+        },
+        {
+            "id": 9,
+            "name": "ICTICT611 - Develop and maintain information security program",
+            "description": "Develop and maintain comprehensive information security programs. Includes risk assessment and security policy implementation.",
+            "price": 1899.00,
+            "image": "security_program.jpg"
+        },
+        {
+            "id": 10,
+            "name": "ICTICT610 - Manage copyright, ethics and privacy in an ICT environment",
+            "description": "Manage copyright, ethics and privacy in ICT environments. Includes compliance management and policy development.",
+            "price": 1699.00,
+            "image": "copyright_ethics.jpg"
+        },
+        {
+            "id": 11,
+            "name": "ICTICT608 - Interact with clients on a business level",
+            "description": "Advanced client interaction and relationship management. Includes business communication and stakeholder management.",
+            "price": 1499.00,
+            "image": "client_management.jpg"
+        },
+        {
+            "id": 12,
+            "name": "ICTICT607 - Implement network security infrastructure",
+            "description": "Implement and manage network security infrastructure. Includes security protocols and network protection strategies.",
+            "price": 1799.00,
+            "image": "network_security.jpg"
+        },
+        {
+            "id": 13,
+            "name": "ICTICT606 - Develop a strategic ICT business continuity plan",
+            "description": "Develop comprehensive ICT business continuity plans. Includes disaster recovery and risk management strategies.",
+            "price": 1999.00,
+            "image": "business_continuity.jpg"
+        }
+    ]
+} 

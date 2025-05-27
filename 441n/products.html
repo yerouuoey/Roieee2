@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACCM College - ICT Courses</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .logo-section {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: 100;
+        }
+        .college-logo {
+            width: 100px;
+            height: auto;
+            display: block;
+        }
+        header {
+            position: relative;
+            padding-top: 60px;
+        }
+        .accm-difference {
+            background-color: #f8f9fa;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        .accm-difference h2 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .difference-points {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .difference-point {
+            text-align: center;
+            padding: 15px;
+        }
+        .difference-point i {
+            font-size: 2em;
+            color: #3498db;
+            margin-bottom: 10px;
+        }
+        .course-categories {
+            background-color: #f8f9fa;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        .course-categories h2 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            padding: 20px;
+        }
+        .category-item {
+            text-align: center;
+            padding: 15px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .category-item:hover {
+            transform: translateY(-5px);
+        }
+        .category-item i {
+            font-size: 2em;
+            color: #3498db;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="discount-banner">
+            ACCM College is currently offering a 25% discount on all of our courses!
+        </div>
+        <header>
+            <div class="logo-section">
+                <img src="logo.jpg" alt="ACCM College Logo" class="college-logo">
+            </div>
+            <div class="user-section">
+                <span id="userNameDisplay">Welcome, Guest</span>
+                <button onclick="logout()" class="logout-btn" id="logoutBtn" style="display: none;">Logout</button>
+            </div>
+            <div class="banner">
+                <h1>If you want to study...we want to help</h1>
+                <p>Nationally Recognised Training at ACCM College</p>
+            </div>
+            <nav>
+                <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                <a href="products.html" class="active"><i class="fas fa-graduation-cap"></i> Courses</a>
+                <a href="cart.html" id="cartLink" class="disabled"><i class="fas fa-shopping-cart"></i> Cart</a>
+                <a href="checkout.html" id="checkoutLink" class="disabled"><i class="fas fa-credit-card"></i> Checkout</a>
+                <a href="logout.html" id="logoutLink" class="disabled"><i class="fas fa-sign-out-alt"></i> Logout</a>
+            </nav>
+        </header>
+
+        <div class="course-categories">
+            <h2>Study Areas</h2>
+            <div class="category-grid">
+                <div class="category-item">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Information Technology</h3>
+                </div>
+                <div class="category-item">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Business</h3>
+                </div>
+                <div class="category-item">
+                    <i class="fas fa-users"></i>
+                    <h3>Human Resources</h3>
+                </div>
+                <div class="category-item">
+                    <i class="fas fa-file-invoice-dollar"></i>
+                    <h3>Finance</h3>
+                </div>
+                <div class="category-item">
+                    <i class="fas fa-project-diagram"></i>
+                    <h3>Project Management</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="accm-difference">
+            <h2>The ACCM Difference</h2>
+            <div class="difference-points">
+                <div class="difference-point">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Limited Places</h3>
+                    <p>We limit our student numbers to ensure quality learning experience</p>
+                </div>
+                <div class="difference-point">
+                    <i class="fas fa-clock"></i>
+                    <h3>Start Anytime</h3>
+                    <p>Immediate enrollment with 30-minute access to Webclass</p>
+                </div>
+                <div class="difference-point">
+                    <i class="fas fa-dollar-sign"></i>
+                    <h3>No Hidden Fees</h3>
+                    <p>Transparent pricing with no extra charges</p>
+                </div>
+                <div class="difference-point">
+                    <i class="fas fa-users"></i>
+                    <h3>Expert Support</h3>
+                    <p>Dedicated Student Advisers with industry experience</p>
+                </div>
+            </div>
+        </div>
+
+        <main class="products-container">
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="business_continuity.jpg" alt="ICT Business Continuity">
+                    <h3>ICTICT606 - Business Continuity</h3>
+                    <p>Develop comprehensive ICT business continuity plans. Includes disaster recovery and risk management strategies.</p>
+                    <div class="price">AUD $1,999.00</div>
+                    <div class="discount-price">AUD $1,499.25 (25% OFF)</div>
+                    <div class="popular-tag">Most Popular</div>
+                </div>
+                <div class="product-card">
+                    <img src="security_program.jpg" alt="Information Security">
+                    <h3>ICTICT611 - Information Security</h3>
+                    <p>Develop and maintain comprehensive information security programs. Includes risk assessment and security policy implementation.</p>
+                    <div class="price">AUD $1,899.00</div>
+                    <div class="discount-price">AUD $1,424.25 (25% OFF)</div>
+                    <div class="popular-tag">Trending</div>
+                </div>
+                <div class="product-card">
+                    <img src="network_security.jpg" alt="Network Security">
+                    <h3>ICTICT607 - Network Security</h3>
+                    <p>Implement and manage network security infrastructure. Includes security protocols and network protection strategies.</p>
+                    <div class="price">AUD $1,799.00</div>
+                    <div class="discount-price">AUD $1,349.25 (25% OFF)</div>
+                    <div class="popular-tag">Best Seller</div>
+                </div>
+                <div class="product-card">
+                    <img src="ip_management.jpg" alt="IP Management">
+                    <h3>ICTICT618 - IP Management</h3>
+                    <p>Advanced management of intellectual property, ethics and privacy in ICT environments. Includes policy development and compliance frameworks.</p>
+                    <div class="price">AUD $1,799.00</div>
+                    <div class="discount-price">AUD $1,349.25 (25% OFF)</div>
+                    <div class="popular-tag">New</div>
+                </div>
+                <div class="product-card">
+                    <img src="system_changes.jpg" alt="System Software Changes">
+                    <h3>ICTICT615 - System Changes</h3>
+                    <p>Implement and manage system software changes. Includes change management, testing procedures and deployment strategies.</p>
+                    <div class="price">AUD $1,699.00</div>
+                    <div class="discount-price">AUD $1,274.25 (25% OFF)</div>
+                    <div class="popular-tag">Featured</div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About ACCM College</h3>
+                    <p>RTO 1441 - Your trusted source for premium ICT training and certification.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Email: contact@accm.edu.au</p>
+                    <p>Phone: 1800 111 700</p>
+                    <p>Address: Unit 8, 36–42 Auburn Street, Wollongong NSW 2500, Australia</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>2024 ACCM College. Created by Roieee. All rights reserved.</p>
+                <p>ASQA RTO Registration Code: 1441</p>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACCM College - Course Enrollment</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .logo-section {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: 100;
+        }
+        .college-logo {
+            width: 100px;
+            height: auto;
+            display: block;
+        }
+        header {
+            position: relative;
+            padding-top: 60px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="discount-banner">
+            ACCM College is currently offering a 25% discount on all of our courses!
+        </div>
+        <header>
+            <div class="logo-section">
+                <img src="logo.jpg" alt="ACCM College Logo" class="college-logo">
+            </div>
+            <div class="banner">
+                <h1>Course Enrollment</h1>
+                <p>Complete your enrollment process</p>
+            </div>
+            <nav>
+                <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                <a href="products.html"><i class="fas fa-graduation-cap"></i> Courses</a>
+                <a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart</a>
+                <a href="checkout.html" class="active"><i class="fas fa-credit-card"></i> Enrollment</a>
+                <a href="logout.html"><i class="fas fa-sign-out-alt"></i> Logout</a>
+            </nav>
+        </header>
+
+        <div class="checkout-container">
+            <div class="order-summary">
+                <h2>Course Summary</h2>
+                <div id="orderItems"></div>
+                <div class="order-total">
+                    <h3>Total: $<span id="orderTotal">0.00</span></h3>
+                    <p class="discount-note">* 25% discount applied to all courses</p>
+                </div>
+            </div>
+
+            <div class="shipping-info">
+                <h2>Student Information</h2>
+                <form id="shippingForm">
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" id="fullName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <input type="text" id="address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="city">City</label>
+                        <input type="text" id="city" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="state">State</label>
+                        <input type="text" id="state" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="zipCode">ZIP Code</label>
+                        <input type="text" id="zipCode" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="usi">USI Number</label>
+                        <input type="text" id="usi" required>
+                        <small>Unique Student Identifier (USI) is required for enrollment</small>
+                    </div>
+                </form>
+            </div>
+
+            <div class="payment-info">
+                <h2>Payment Information</h2>
+                <form id="paymentForm">
+                    <div class="form-group">
+                        <label for="cardName">Name on Card</label>
+                        <input type="text" id="cardName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cardNumber">Card Number</label>
+                        <input type="text" id="cardNumber" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="expiryDate">Expiry Date</label>
+                        <input type="text" id="expiryDate" placeholder="MM/YY" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cvv">CVV</label>
+                        <input type="text" id="cvv" required>
+                    </div>
+                    <div class="payment-options">
+                        <h3>Payment Options</h3>
+                        <p>We offer flexible payment plans with no interest charges</p>
+                        <div class="payment-plan-options">
+                            <label>
+                                <input type="radio" name="paymentPlan" value="full"> Pay in Full
+                            </label>
+                            <label>
+                                <input type="radio" name="paymentPlan" value="installment"> Pay in Installments
+                            </label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="order-actions">
+                <button id="editOrder" class="action-button">Edit Selection</button>
+                <button id="confirmOrder" class="action-button primary">Complete Enrollment</button>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About ACCM College</h3>
+                    <p>RTO 1441 - Your trusted source for premium ICT training and certification.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Email: contact@accm.edu.au</p>
+                    <p>Phone: 1800 111 700</p>
+                    <p>Address: Unit 8, 36–42 Auburn Street, Wollongong NSW 2500, Australia</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>2024 ACCM College. Created by Roieee. All rights reserved.</p>
+                <p>ASQA RTO Registration Code: 1441</p>
+            </div>
+        </footer>
+    </div>
+    <script src="checkout.js"></script>
+</body>
+</html> 
