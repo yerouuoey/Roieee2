@@ -1,0 +1,39 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "ICTICT532 - Apply IP, ethics and privacy in ICT environments",
+            "description": "Learn to apply intellectual property, ethics and privacy principles in ICT environments. Includes data protection, privacy regulations and professional ethics guidelines.",
+            "price": 1299.00,
+            "image": "ethics_privacy.jpg"
+        },
+        {
+            "id": 2,
+            "name": "ICTICT517 - Match ICT needs with the strategic direction of the organisation",
+            "description": "Align ICT requirements with organizational strategic direction. Includes needs analysis, strategic planning and resource optimization.",
+            "price": 1499.00,
+            "image": "strategy_planning.jpg"
+        },
+        {
+            "id": 3,
+            "name": "ICTICT523 - Gather data to identify business requirements",
+            "description": "Collect data to identify business requirements. Includes requirements analysis, data collection methods and business requirements documentation.",
+            "price": 1199.00,
+            "image": "data_analysis.jpg"
+        },
+        {
+            "id": 4,
+            "name": "ICTICT524 - Determine ICT strategies and solutions for organisations",
+            "description": "Determine ICT strategies and solutions for organizations. Includes strategic planning, technology assessment and solution design.",
+            "price": 1599.00,
+            "image": "ict_solutions.jpg"
+        },
+        {
+            "id": 5,
+            "name": "ICTICT526 - Verify client business requirements",
+            "description": "Verify client business requirements. Includes requirements validation, client communication and documentation confirmation.",
+            "price": 999.00,
+            "image": "business_requirements.jpg"
+        }
+    ]
+} 
